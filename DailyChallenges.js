@@ -33,3 +33,22 @@ function monthName(num) {
       break;
   }
 }
+
+//Create a function that takes a string and returns the word count. The string will be a sentence.
+function countWords(str) {
+  return str.split(" ").length;
+}
+
+//Create a function that takes an array of numbers and returns the smallest number in the set.
+function findSmallestNum(arr) {
+  return Math.min(...arr);
+}
+//Other solution i tried
+function findSmallestNum(arr) {
+  let smNum = arr[0];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] < smNum) {
+      return (arr[i] = smNum);
+    }
+  }
+}
