@@ -73,3 +73,8 @@ function firstLast(arr) {
   arr.splice(1, arr.length - 2);
   return arr;
 }
+//Create a function that takes an array of strings and returns the words that are exactly four letters.
+function isFourLetters(arr) {
+  const newArr = arr.filter(fourLetter => fourLetter.length === 4);
+  return newArr;
+}
