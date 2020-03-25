@@ -68,3 +68,8 @@ function isStrangePair(str1, str2) {
     return false;
   }
 }
+//Create a function that takes an array of numbers and return the first and last elements as a new array.
+function firstLast(arr) {
+  arr.splice(1, arr.length - 2);
+  return arr;
+}
