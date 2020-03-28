@@ -78,3 +78,7 @@ function isFourLetters(arr) {
   const newArr = arr.filter(fourLetter => fourLetter.length === 4);
   return newArr;
 }
+// Return the sum of two numbers
+function addition(a, b) {
+  return (a += b);
+}
