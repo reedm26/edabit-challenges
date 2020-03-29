@@ -98,3 +98,8 @@ function lessThan100(a, b) {
     return false;
   }
 }
+//Given a year you must implement a function that returns true if it's a leap year, or false if it's not.
+//A year must either be divisible by 400 or divisible by 4 and not 100.
+function isLeap(year) {
+  return (year % 4 == 0 && year % 100 != 0) || year % 400 == 0;
+}
