@@ -82,3 +82,19 @@ function isFourLetters(arr) {
 function addition(a, b) {
   return (a += b);
 }
+
+// Find prerimeter of rectangle
+function findPerimeter(height, width) {
+  let h = height * 2;
+  let w = width * 2;
+  return (h += w);
+}
+
+//Given two numbers, return true if the sum of both numbers is less than 100. Otherwise return false.
+function lessThan100(a, b) {
+  if ((a += b) < 100) {
+    return true;
+  } else {
+    return false;
+  }
+}
