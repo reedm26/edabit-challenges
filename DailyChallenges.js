@@ -103,3 +103,8 @@ function lessThan100(a, b) {
 function isLeap(year) {
   return (year % 4 == 0 && year % 100 != 0) || year % 400 == 0;
 }
+
+//Create a function that takes an array of numbers. Return the largest number in the array.
+function findLargestNum(arr) {
+  return Math.max(...arr);
+}
