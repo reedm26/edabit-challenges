@@ -108,3 +108,53 @@ function isLeap(year) {
 function findLargestNum(arr) {
   return Math.max(...arr);
 }
+
+//Create a function that takes a string and returns the word count. The string will be a sentence.
+function countWords(str) {
+  return str.split(" ").length;
+}
+
+//Create a function that takes an array of numbers and return the first and last elements as a new array.
+function firstLast(arr) {
+  arr.splice(1, arr.length - 2);
+  return arr;
+}
+
+//Given a class for a BasicPlan, write the classes for StandardPlan and PremiumPlan which have class properties of the following:
+
+//BasicPlan	StandardPlan	PremiumPlan
+//✓	✓	✓	canStream
+//✓	✓	✓	canDownload
+//✓	✓	✓	hasSD
+//X ✓	✓	hasHD
+//X X ✓	hasUHD
+//1	2	4	numOfDevices
+//$8.99	$12.99	$15.99	price
+//Examples
+class BasicPlan {
+  static canStream = true;
+  static canDownload = true;
+  static numOfDevices = 1;
+  static hasSD = true;
+  static hasHD = false;
+  static hasUHD = false;
+  static price = "$8.99";
+}
+class StandardPlan {
+  static canStream = true;
+  static canDownload = true;
+  static numOfDevices = 2;
+  static hasSD = true;
+  static hasHD = true;
+  static hasUHD = false;
+  static price = "$12.99";
+}
+class PremiumPlan {
+  static canStream = true;
+  static canDownload = true;
+  static numOfDevices = 4;
+  static hasSD = true;
+  static hasHD = true;
+  static hasUHD = true;
+  static price = "$15.99";
+}
