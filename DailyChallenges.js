@@ -158,3 +158,14 @@ class PremiumPlan {
   static hasUHD = true;
   static price = "$15.99";
 }
+
+//Create a function that returns true if an input string contains only uppercase or only lowercase letters.
+function sameCase(str) {
+  if (str === str.toLowerCase()) {
+    return true;
+  } else if (str === str.toUpperCase()) {
+    return true;
+  } else {
+    return false;
+  }
+}
