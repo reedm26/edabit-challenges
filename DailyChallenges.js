@@ -175,3 +175,24 @@ function numberSyllables(word) {
   let newOne = word.split("-");
   return newOne.length;
 }
+
+//Your friend is trying to write a function that removes all vowels from a string. They write:
+function removeVowels(str) {
+  return str.replace(/[aeiou]/, "");
+}
+//My solution
+//Added the gi at the end because it wasnt going through the whole line, only stopping once it had a match of some sort
+function removeVowels(str) {
+  return str.replace(/[aeiou]/gi, "");
+}
+
+//Create a function that takes a number (from 1 - 60) and returns a corresponding string of hyphens.
+function Go(num) {
+  let dash = "-";
+  return dash.repeat(num);
+}
+
+//Create a function that takes an array of strings and returns the words that are exactly four letters.
+function isFourLetters(arr) {
+  return arr.filter(a => a.length == 4);
+}
