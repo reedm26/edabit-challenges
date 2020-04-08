@@ -75,7 +75,7 @@ function firstLast(arr) {
 }
 //Create a function that takes an array of strings and returns the words that are exactly four letters.
 function isFourLetters(arr) {
-  const newArr = arr.filter(fourLetter => fourLetter.length === 4);
+  const newArr = arr.filter((fourLetter) => fourLetter.length === 4);
   return newArr;
 }
 // Return the sum of two numbers
@@ -194,7 +194,7 @@ function Go(num) {
 
 //Create a function that takes an array of strings and returns the words that are exactly four letters.
 function isFourLetters(arr) {
-  return arr.filter(a => a.length == 4);
+  return arr.filter((a) => a.length == 4);
 }
 
 //This Triangular Number Sequence is generated from a pattern of dots that form a triangle. The first 5 numbers of the sequence, or dots, are: 1, 3, 6, 10, 15. Write a function that converts n number of places with its corresponding number.
@@ -217,4 +217,9 @@ function retrieveMinor(semver) {
 
 function retrievePatch(semver) {
   return semver.split(".")[2];
+}
+
+//Create a function that takes an array of numbers and returns the smallest number in the set.
+function findSmallestNum(arr) {
+  return Math.min(...arr);
 }
