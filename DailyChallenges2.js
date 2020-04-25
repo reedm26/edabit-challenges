@@ -8,3 +8,6 @@ function reverse(bool) {
     return "boolean expected";
   }
 }
+
+// Write a regular expression that matches a string if it contains at least one digit.
+let x = /\d/;
