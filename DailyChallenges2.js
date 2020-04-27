@@ -20,3 +20,8 @@ let x = /\d/;
 // 			return (month == 12 && day == 24);
 //     }
 // }
+
+//Write a function that returns true if a hash contains the specified key, and false otherwise.
+function hasKey(obj, key) {
+  return key in obj;
+}
