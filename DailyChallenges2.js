@@ -34,3 +34,16 @@ function repeat(item, times) {
 function remainder(x, y) {
   return x % y;
 }
+
+// Given an object of how many more pages each ink color can print, output the maximum number of pages the printer can print before any of the colors run out.
+// Example:
+// inkLevels({
+//   "cyan": 23,
+//   "magenta": 12,
+//   "yellow": 10
+// }) ➞ 10
+function inkLevels(inks) {
+  // @ts-ignore
+  const arr1 = Object.values(inks);
+  return Math.min(...arr1);
+}
