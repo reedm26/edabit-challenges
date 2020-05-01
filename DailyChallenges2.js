@@ -47,3 +47,14 @@ function inkLevels(inks) {
   const arr1 = Object.values(inks);
   return Math.min(...arr1);
 }
+
+//Write a function that calculates the factorial of a number recursively.
+function factorial(n) {
+  if (n < 0) {
+    return -1;
+  } else if (n == 0) {
+    return 1;
+  } else {
+    return n * factorial(n - 1);
+  }
+}
