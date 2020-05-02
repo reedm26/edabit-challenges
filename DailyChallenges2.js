@@ -58,3 +58,13 @@ function factorial(n) {
     return n * factorial(n - 1);
   }
 }
+
+// Create a function that takes a number (step) as an argument and returns the amount of matchsticks in that step. See step 1, 2 and 3 in the image above.
+// steps = 6 matches
+function matchHouses(step) {
+  if (step == 0) {
+    return 0;
+  } else {
+    return step * 6 - (step - 1);
+  }
+}
