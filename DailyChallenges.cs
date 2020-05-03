@@ -6,3 +6,19 @@ public class Program
     return (month == 12 && day == 24);
   }
 }
+
+// Given two integers, a and b, return true if a can be divided evenly by b. Return false otherwise.
+public class Program
+{
+  public static bool dividesEvenly(int a, int b)
+  {
+    if (a % b == 0)
+    {
+      return true;
+    }
+    else
+    {
+      return false;
+    }
+  }
+}
