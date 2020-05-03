@@ -22,3 +22,22 @@ public class Program
     }
   }
 }
+
+// Create a function that takes an array and a string as arguments and return the index of the string.
+public class Program
+{
+  public static int FindIndex(string[] arr, string str)
+  {
+    int ind = 0;
+    for (int i = 0; i < arr.Length; i++)
+    {
+      if (str == arr[i])
+      {
+        ind = i;
+        break;
+      }
+    }
+    return ind;
+  }
+
+}
