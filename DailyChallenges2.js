@@ -68,3 +68,8 @@ function matchHouses(step) {
     return step * 6 - (step - 1);
   }
 }
+
+// Create a function that takes an argument of any data type and returns 1 if it's truthy and 0 if it's falsy.
+function isTruthy(input) {
+  return input ? 1 : 0;
+}
