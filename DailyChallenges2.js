@@ -73,3 +73,10 @@ function matchHouses(step) {
 function isTruthy(input) {
   return input ? 1 : 0;
 }
+
+// Given an array of integers, return the difference between the largest and smallest integers in the array.
+function difference(nums) {
+  var hiNum = Math.max(...nums);
+  var loNum = Math.min(...nums);
+  return hiNum - loNum;
+}
