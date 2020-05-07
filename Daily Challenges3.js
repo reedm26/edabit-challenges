@@ -8,3 +8,6 @@ function isSymmetrical(num) {
     return true;
   }
 }
+
+// Use ES6 object destructuring to assign variables one and two to obj.one and obj.two respectively.
+let str = `( {one, two} = { one : 1, two : 2}).toString()`;
