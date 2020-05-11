@@ -21,3 +21,11 @@ let promise = new Promise((resolve, reject) => {
 
 // Make a regexp to find time in the string: Breakfast at 09:00 in the room 123:456. In this task there’s no need to check time correctness yet, so 25:99 can also be a valid result. The regexp should not match 123:456.
 const REGEXP = /\b\d\d:\d\d\b/;
+
+// Create a function to multiply all of the values in an array by the amount of values in the given array
+function multiplyByLength(arr) {
+  for (var i = 0; i < arr.length; i++) {
+    arr[i] = arr[i] * arr.length;
+  }
+  return arr;
+}
