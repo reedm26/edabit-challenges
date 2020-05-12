@@ -29,3 +29,10 @@ function multiplyByLength(arr) {
   }
   return arr;
 }
+
+// Create a function that accepts a string (of a person's first and last name) and returns a string with the first and last name swapped.
+function nameShuffle(str) {
+  const newArr = str.split(" ");
+  var newOne = newArr.reverse();
+  return newOne.join(" ");
+}
