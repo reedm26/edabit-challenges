@@ -36,3 +36,8 @@ function nameShuffle(str) {
   var newOne = newArr.reverse();
   return newOne.join(" ");
 }
+
+// Create a function to remove all null values from an array.
+function removeNull(arr) {
+  return arr.filter(Boolean);
+}
