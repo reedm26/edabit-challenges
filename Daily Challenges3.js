@@ -41,3 +41,10 @@ function nameShuffle(str) {
 function removeNull(arr) {
   return arr.filter(Boolean);
 }
+
+// Write a function that takes a two-digit number and determines if it's the largest of two possible digit swaps.
+function largestSwap(num) {
+  var newNum = num.toString();
+  if (num >= newNum.charAt(1) + newNum.charAt(0)) return true;
+  return false;
+}
