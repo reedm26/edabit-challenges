@@ -48,3 +48,12 @@ function largestSwap(num) {
   if (num >= newNum.charAt(1) + newNum.charAt(0)) return true;
   return false;
 }
+
+// Create a function which takes in a word and spells it out, by consecutively adding letters until the full word is completed.
+function spelling(str) {
+  let newArr = [];
+  for (let i = 1; i <= str.length; i++) {
+    newArr.push(str.slice(0, i));
+  }
+  return newArr;
+}
