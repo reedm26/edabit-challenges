@@ -57,3 +57,23 @@ function spelling(str) {
   }
   return newArr;
 }
+
+// Write a function that returns the number of users in a chatroom based on the following rules:
+
+// If there is no one, return "no one online".
+// If there is 1 person, return "[user1] online".
+// If there are 2 people, return [user 1] and [user 2] online".
+// If there are n>2 people, return the first two names and add "and n-2 more online".
+function chatroomStatus(users) {
+  var players = users.length - 1;
+  for (var i = 0; i <= users.length - 1; i++) var x = users[i];
+  if (users.length == 0) {
+    return "no one online";
+  } else if (users.length == 1) {
+    return `${x} online`;
+  } else if (users.length == 2) {
+    return `${users[0]} and ${users[1]} online`;
+  } else if (users.length >= 3) {
+    return `${users[0]}, ${users[1]} and ${users.length - 2} more online`;
+  }
+}
