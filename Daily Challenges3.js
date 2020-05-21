@@ -83,3 +83,13 @@ function sortNumsAscending(arr) {
   if (arr === null) return [];
   return arr.sort((a, b) => a - b);
 }
+
+// Suppose I want to define a function that removes the last element of an array each time I call it, but does not mutate the original array. Fix the code so that the results are no longer mutating the array.
+function minusOne(arr) {
+  if (arr.length == 5) {
+    arr.pop();
+    return arr;
+  } else {
+    return arr;
+  }
+}
