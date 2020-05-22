@@ -99,3 +99,17 @@ function hasSpaces(str) {
   var x = " ";
   return str.includes(x);
 }
+
+// Create a function that takes in an array and returns true if all its values are even, and false otherwise.
+// Fix the code so that all tests pass:
+//Beginning Function
+function checkAllEven(arr) {
+  // @ts-ignore
+  return arr.every(x % 2 === 0);
+}
+
+// Fixed Function
+function checkAllEven(arr) {
+  for (var x = 0; x <= arr.length - 1; x++);
+  return arr.every((x) => x % 2 === 0);
+}
