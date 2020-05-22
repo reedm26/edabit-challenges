@@ -93,3 +93,9 @@ function minusOne(arr) {
     return arr;
   }
 }
+
+// Create a function that returns true if a string contains any spaces.
+function hasSpaces(str) {
+  var x = " ";
+  return str.includes(x);
+}
