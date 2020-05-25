@@ -123,3 +123,12 @@ function existsHigher(arr, n) {
   }
   return false;
 }
+
+// Create a function that takes an array of numbers and return both the minimum and maximum numbers, in that order.
+function minMax(arr) {
+  var newArr = [];
+  var x = Math.min(...arr);
+  var y = Math.max(...arr);
+  newArr.push(x, y);
+  return newArr;
+}
