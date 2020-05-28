@@ -137,3 +137,7 @@ function minMax(arr) {
 function reverse(arr) {
   return arr.reverse();
 }
+
+// Write the regular expression that reveals the hidden word. You have to remove all of the special characters to reveal the word. Use the character class \w in your expression.
+// @ts-ignore
+const REGEXP = /\w/g;
