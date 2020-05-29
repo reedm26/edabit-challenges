@@ -141,3 +141,12 @@ function reverse(arr) {
 // Write the regular expression that reveals the hidden word. You have to remove all of the special characters to reveal the word. Use the character class \w in your expression.
 // @ts-ignore
 const REGEXP = /\w/g;
+
+// Write a function that returns true if an object is empty, and false otherwise.
+function isEmpty(obj) {
+  if (Object.keys(obj).length == 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
