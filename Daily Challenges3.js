@@ -150,3 +150,8 @@ function isEmpty(obj) {
     return false;
   }
 }
+
+// Write a function that takes an integer i and returns an integer with the integer backwards followed by the original integer.
+function reverseAndNot(i) {
+  return parseInt(i.toString().split("").reverse().join("") + i);
+}
