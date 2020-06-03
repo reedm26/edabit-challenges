@@ -161,3 +161,13 @@ function highLow(str) {
   var nums = str.split(" ");
   return `${Math.max(...nums)} ${Math.min(...nums)}`;
 }
+
+// Create a function that takes a string of lowercase characters and returns that string reversed and in upper case.
+function reverseCapitalize(str) {
+  let x = str
+    .toUpperCase(...str)
+    .split("")
+    .reverse()
+    .join("");
+  return x.toString();
+}
