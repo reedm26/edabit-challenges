@@ -155,3 +155,9 @@ function isEmpty(obj) {
 function reverseAndNot(i) {
   return parseInt(i.toString().split("").reverse().join("") + i);
 }
+
+// Create a function that accepts a string of space separated numbers and returns the highest and lowest number (as a string).
+function highLow(str) {
+  var nums = str.split(" ");
+  return `${Math.max(...nums)} ${Math.min(...nums)}`;
+}
