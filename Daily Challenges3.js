@@ -176,3 +176,12 @@ function reverseCapitalize(str) {
 function repetition(txt, n) {
   return txt.repeat(n);
 }
+
+// Create a function that takes a number as an argument and returns an array of numbers counting down from this number to zero.
+function countdown(start) {
+  let myArr = [];
+  for (let i = 0; i <= start; i++) {
+    myArr.push(i);
+  }
+  return myArr.reverse();
+}
