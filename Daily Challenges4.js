@@ -23,3 +23,10 @@ function getFillings(sandwich) {
 function additiveInverse(arr) {
   return arr.map((x) => -x);
 }
+
+// Create a function that takes ball speed bs and club speed cs as arguments and returns the smash factor to the nearest hundredth.
+function smashFactor(bs, cs) {
+  var x = bs / cs;
+  var y = x.toFixed(2);
+  return Number(y);
+}
