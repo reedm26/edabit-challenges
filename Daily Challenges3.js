@@ -186,3 +186,11 @@ function countdown(start) {
   }
   return myArr.reverse();
 }
+
+// Create a function that takes an array of hurdle heights and a jumper's jump height, and determine whether or not the hurdler can clear all the hurdles.
+function hurdleJump(hurdles, jumpHeight) {
+  for (let i = 0; i < hurdles.length; i++) {
+    if (jumpHeight < hurdles[i]) return false;
+  }
+  return true;
+}
