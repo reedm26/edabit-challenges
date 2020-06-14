@@ -30,3 +30,8 @@ function smashFactor(bs, cs) {
   var y = x.toFixed(2);
   return Number(y);
 }
+
+// Let's say we wanted to change the amount of pages that Google could skip to. Create a function where given a number of pages n, return the word "Google" but with the correct number of "o"s.
+function googlify(n) {
+  return n > 1 ? "G" + "o".repeat(n) + "gle" : "invalid";
+}
