@@ -40,3 +40,8 @@ function googlify(n) {
 function AlphabetSoup(str) {
   return str.split("").sort().join("");
 }
+
+// Create a function that converts a date formatted as MM/DD/YYYY to YYYYDDMM.
+function formatDate(date) {
+  return date.split("/").reverse().join("");
+}
