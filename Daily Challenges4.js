@@ -45,3 +45,8 @@ function AlphabetSoup(str) {
 function formatDate(date) {
   return date.split("/").reverse().join("");
 }
+
+// Given a word, create a function that checks whether it is a palindrome.
+function checkPalindrome(str) {
+  return [...str].reverse().join("") == str;
+}
