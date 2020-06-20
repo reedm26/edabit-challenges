@@ -69,3 +69,16 @@ function helloWorld(num) {
 function helloWorld(num) {
   return num % 15 === 0 ? "Hello World" : num % 3 === 0 ? "Hello" : "World";
 }
+
+// Write a function that returns true if two rooks can attack each other, and false otherwise.
+function canCapture([yourRook, opponentsRook]) {
+  let myRook = yourRook;
+  let hisRook = opponentsRook;
+  if (myRook.charAt(0) === hisRook.charAt(0)) {
+    return true;
+  } else if (myRook.charAt(1) === hisRook.charAt(1)) {
+    return true;
+  } else {
+    return false;
+  }
+}
