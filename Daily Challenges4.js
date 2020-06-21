@@ -82,3 +82,12 @@ function canCapture([yourRook, opponentsRook]) {
     return false;
   }
 }
+
+// Create a function that takes in the number of each challenge level a user has played and calculates the user's total number of points. Keep in mind that a user cannot complete negative challenges, so the function should return the string "invalid" if any of the passed parameters are negative.
+function scoreCalculator(easy, med, hard) {
+  if (easy >= 0 && med >= 0 && hard >= 0) {
+    return easy * 5 + med * 10 + hard * 20;
+  } else {
+    return "invalid";
+  }
+}
