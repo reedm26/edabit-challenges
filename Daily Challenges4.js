@@ -94,3 +94,8 @@ function scoreCalculator(easy, med, hard) {
 
 // Create a function that takes a name and returns a greeting in the form of a string. Don't use a normal function but use an "arrow function".
 const helloName = (name) => "Hello " + name + "!";
+
+// Create a function that takes two strings and returns true if the first string ends with the second string; otherwise return false.
+function checkEnding(str1, str2) {
+  return str1.endsWith(str2);
+}
