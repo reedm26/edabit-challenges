@@ -50,3 +50,13 @@ public class Program
     return !boolean;
   }
 }
+
+// Create a function that takes a single string as argument and returns an ordered array containing the indices of all capital letters in the string.
+public class Program
+{
+  public static int[] IndexOfCapitals(string str)
+  {
+    return str.Where(x => char.IsLetter(x) && x == char.ToUpper(x))
+      .Select(x => str.IndexOf(x)).ToArray();
+  }
+}
