@@ -108,3 +108,13 @@ function findLargestNums(arr) {
   }
   return newArr;
 }
+
+// Create a function that removes the first and last characters from a string.
+function removeFirstLast(str) {
+  var x = str.length - 1;
+  if (str.length <= 2) {
+    return str;
+  } else {
+    return str.substring(1, x);
+  }
+}
