@@ -121,3 +121,14 @@ function removeFirstLast(str) {
 
 // Create a function that takes a number step (which equals HALF the width of a square) and returns the amount of empty squares. The image shows the squares with step 1, 2 and 3. The return value is the number of cells not on a diagonal, which is 0 for the first square, 8 for the second, and 24 for the third.
 const emptySq = (step) => Math.pow(step * 2, 2) - step * 4;
+
+// Create the instance properties fullname and email in the Employee class. Given a person's first and last names:
+class Employee {
+  constructor(firstname, lastname) {
+    this.firstname = firstname;
+    this.lastname = lastname;
+    this.fullname = firstname + " " + lastname;
+    let email = firstname + "." + lastname + "@company.com";
+    this.email = email.toLowerCase();
+  }
+}
