@@ -132,3 +132,9 @@ class Employee {
     this.email = email.toLowerCase();
   }
 }
+
+// Create a function that adds a string ending to each member in an array.
+function addEnding(arr, ending) {
+  var newArr = arr.map((x) => (x += ending));
+  return newArr;
+}
