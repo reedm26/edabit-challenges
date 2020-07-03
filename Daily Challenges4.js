@@ -153,3 +153,15 @@ function indexShuffle(str) {
 
   return [...even, ...odd].join("");
 }
+
+// Write two functions:
+
+// toArray(), which converts a number to an array of its digits.
+// toNumber(), which converts an array of digits back to its number.
+function toArray(num) {
+  return [...num.toString()].map((s) => Number(s));
+}
+
+function toNumber(arr) {
+  return Number(arr.join(""));
+}
