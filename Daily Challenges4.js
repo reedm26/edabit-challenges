@@ -174,3 +174,16 @@ function factorial(n) {
     return n * factorial(n - 1);
   }
 }
+
+// Create a function that takes a number as an argument and returns "Fizz", "Buzz" or "FizzBuzz".
+function FizzBuzz(num) {
+  if (num % 5 == 0 && num % 3 == 0) {
+    return "FizzBuzz";
+  } else if (num % 5 == 0) {
+    return "Buzz";
+  } else if (num % 3 == 0) {
+    return "Fizz";
+  } else {
+    return num.toString();
+  }
+}
