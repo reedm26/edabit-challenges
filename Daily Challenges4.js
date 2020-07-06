@@ -187,3 +187,8 @@ function FizzBuzz(num) {
     return num.toString();
   }
 }
+
+// Create a function that takes an array of numbers and returns only the even values.
+function noOdds(arr) {
+  return arr.filter((x) => x % 2 === 0);
+}
