@@ -192,3 +192,8 @@ function FizzBuzz(num) {
 function noOdds(arr) {
   return arr.filter((x) => x % 2 === 0);
 }
+
+// Given a string of numbers separated by a comma and space, return the total of all the numbers.
+function addNums(nums) {
+  return nums.split(", ").reduce((a, b) => a + +b, 0);
+}
