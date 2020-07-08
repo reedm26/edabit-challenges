@@ -197,3 +197,9 @@ function noOdds(arr) {
 function addNums(nums) {
   return nums.split(", ").reduce((a, b) => a + +b, 0);
 }
+
+// Create a function to calculate the determinant of a 2 x 2 matrix. The determinant of the following matrix is: ad - bc:
+function calcDeterminant(matrix) {
+  let m = matrix;
+  return m[0][0] * m[1][1] - m[0][1] * m[1][0];
+}
