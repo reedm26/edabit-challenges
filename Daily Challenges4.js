@@ -203,3 +203,8 @@ function calcDeterminant(matrix) {
   let m = matrix;
   return m[0][0] * m[1][1] - m[0][1] * m[1][0];
 }
+
+// Given a number n, write a function that returns PI to n decimal places.
+function myPi(n) {
+  return Number(Math.PI.toFixed(n));
+}
