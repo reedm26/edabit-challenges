@@ -220,3 +220,15 @@ function convert(hours, minutes) {
   let y = hours * 3600;
   return (x += y);
 }
+
+// Create a function that takes in year and months as input, then return what year it would be after n-months has elapsed.
+function afterNMonths(year, months) {
+  if (year === undefined) {
+    return "year missing";
+  } else if (months === undefined) {
+    return "month missing";
+  } else {
+    let x = Math.floor(months / 12);
+    return (year += x);
+  }
+}
