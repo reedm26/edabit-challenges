@@ -232,3 +232,6 @@ function afterNMonths(year, months) {
     return (year += x);
   }
 }
+
+// Use ES6 object destructuring to add a default value of 1 to the one variable. Ignore the .toString() function (used for validation).
+const str = `({ one = 1, two } = { two : 2 }).toString()`;
