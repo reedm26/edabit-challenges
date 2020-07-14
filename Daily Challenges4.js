@@ -235,3 +235,8 @@ function afterNMonths(year, months) {
 
 // Use ES6 object destructuring to add a default value of 1 to the one variable. Ignore the .toString() function (used for validation).
 const str = `({ one = 1, two } = { two : 2 }).toString()`;
+
+// Given two strings, create a function that returns the total number of unique characters from the combined string.
+function countUnique(s1, s2) {
+  return new Set(s1 + s2).size;
+}
