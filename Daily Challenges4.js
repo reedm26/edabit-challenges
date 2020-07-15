@@ -240,3 +240,12 @@ const str = `({ one = 1, two } = { two : 2 }).toString()`;
 function countUnique(s1, s2) {
   return new Set(s1 + s2).size;
 }
+
+// Write a function that returns true if k^k == n for input (n, k) and return false otherwise.
+function kToK(n, k) {
+  if (k ** k == n) {
+    return true;
+  } else {
+    return false;
+  }
+}
