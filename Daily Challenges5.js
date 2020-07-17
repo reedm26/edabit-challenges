@@ -3,3 +3,8 @@ function profit(info) {
   var x = (info.sellPrice -= info.costPrice) * info.inventory;
   return Math.round(x);
 }
+
+// Create a function that takes a number of a guitar string and the number of the fret and returns the corresponding frequency of the note.
+const gStr = [329.63, 246.94, 196, 146.83, 110, 82.41];
+let fretFreq = (...fr) =>
+  +(gStr[fr[0] - 1] * Math.pow(2, fr[1] / 12)).toFixed(2);
