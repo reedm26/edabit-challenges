@@ -7,4 +7,9 @@ function profit(info) {
 // Create a function that takes a number of a guitar string and the number of the fret and returns the corresponding frequency of the note.
 const gStr = [329.63, 246.94, 196, 146.83, 110, 82.41];
 let fretFreq = (...fr) =>
-  +(gStr[fr[0] - 1] * Math.pow(2, fr[1] / 12)).toFixed(2);
+  // Create a function that replaces all the vowels in a string with a specified character.
+
+  function replaceVowels(str, ch) {
+    let regEx = /[aeiou]/g;
+    return str.replace(regEx, ch);
+  };
