@@ -13,3 +13,8 @@ let fretFreq = (...fr) =>
     let regEx = /[aeiou]/g;
     return str.replace(regEx, ch);
   };
+
+// In this challenge, you have to implement a function that returns the given distance kilometers converted into miles. You have to round the result up to the fifth decimal digit.
+function kmtomiles(kilometers) {
+  return parseFloat((kilometers * 0.621371).toFixed(5));
+}
