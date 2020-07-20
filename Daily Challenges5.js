@@ -18,3 +18,9 @@ let fretFreq = (...fr) =>
 function kmtomiles(kilometers) {
   return parseFloat((kilometers * 0.621371).toFixed(5));
 }
+
+// Create a function that applies a discount d to every number in the array.
+function getDiscounts(nums, d) {
+  var discount = parseFloat(d) / 100;
+  return nums.map((x) => x * discount);
+}
