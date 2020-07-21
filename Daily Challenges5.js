@@ -24,3 +24,8 @@ function getDiscounts(nums, d) {
   var discount = parseFloat(d) / 100;
   return nums.map((x) => x * discount);
 }
+
+// Write a function that uses the ternary operator to return "yeah" if the condition is true, and "nope" otherwise.
+function yeah_nope(bool) {
+  return bool ? "yeah" : "nope";
+}
