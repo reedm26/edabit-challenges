@@ -29,3 +29,9 @@ function getDiscounts(nums, d) {
 function yeah_nope(bool) {
   return bool ? "yeah" : "nope";
 }
+
+// Write a function that takes a credit card number and only displays the last four characters. The rest of the card number must be replaced by ************.
+function cardHide(card) {
+  let lastFour = card.slice(-4);
+  return lastFour.padStart(card.length, "*");
+}
