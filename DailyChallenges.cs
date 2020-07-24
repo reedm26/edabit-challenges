@@ -60,3 +60,12 @@ public class Program
       .Select(x => str.IndexOf(x)).ToArray();
   }
 }
+
+// Create a function that takes a character and a string as arguments and returns the number of times the character is found in the string.
+public class Program
+{
+  public static int CharCount(char myChar, string str)
+  {
+    return str.Count(c => c == myChar);
+  }
+}
