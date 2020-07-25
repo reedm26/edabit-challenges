@@ -69,3 +69,12 @@ public class Program
     return str.Count(c => c == myChar);
   }
 }
+
+// Create a function that takes a string and returns the word count. The string will be a sentence.
+public class Program
+{
+  public static int CountWords(string str)
+  {
+    return str.Split().Length;
+  }
+}
