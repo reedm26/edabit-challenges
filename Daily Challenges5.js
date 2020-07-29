@@ -48,3 +48,26 @@ function societyName(friends) {
     .sort()
     .join("");
 }
+
+// Create a function takes in two arrays and returns an intersection array and a union array.
+// Intersection Array: Elements shared by both.
+// Union Array: Elements that exist in first or second array, or both (not exclusive OR).
+function intersectionUnion(arr1, arr2) {
+  var r = [[], []];
+  for (var i in arr1) {
+    if (arr2.indexOf(arr1[i]) != -1 && r[0].indexOf(arr1[i]) == -1) {
+      r[0].push(arr1[i]);
+    }
+    if (r[1].indexOf(arr1[i]) == -1) r[1].push(arr1[i]);
+  }
+  for (var i in arr2) {
+    if (r[1].indexOf(arr2[i]) == -1) r[1].push(arr2[i]);
+  }
+  r[0] = r[0].sort(function (a, b) {
+    return a - b;
+  });
+  r[1] = r[1].sort(function (a, b) {
+    return a - b;
+  });
+  return r;
+}
