@@ -80,3 +80,12 @@ const correctStream = (answers, solutions) =>
 function ctoa(c) {
   return c.codePointAt();
 }
+
+// Create a function that returns true if two arrays sharing the same length have identical numerical values at every index, and false otherwise.
+function checkEquals(arr1, arr2) {
+  if (arr1.join(",") === arr2.join(",")) {
+    return true;
+  } else {
+    return false;
+  }
+}
