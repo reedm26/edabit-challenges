@@ -89,3 +89,9 @@ function checkEquals(arr1, arr2) {
     return false;
   }
 }
+
+// Create a function that takes a number as an argument. Add up all the numbers from 1 to the number you passed to the function.
+function addUp(num) {
+  var x = num;
+  return (x * (x += 1)) / 2;
+}
