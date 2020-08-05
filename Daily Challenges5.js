@@ -95,3 +95,8 @@ function addUp(num) {
   var x = num;
   return (x * (x += 1)) / 2;
 }
+
+// Create a function to extract the name of the subreddit from its URL.
+function subReddit(link) {
+  return link.split("/")[4];
+}
