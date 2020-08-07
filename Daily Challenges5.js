@@ -111,6 +111,17 @@ const oldFunction = function (num) {
   return num > 2;
 };
 
+// Create a function that returns the smaller number.
+function smallerNum(n1, n2) {
+  var x = n1 - n2;
+  var y = n2 - n1;
+  if (x >= 0) {
+    return n2;
+  } else if (y >= 0) {
+    return n1;
+  }
+}
+
 const array1 = [1, 2, 3, 4];
 const array2 = [2000, 3000, oldFunction];
 
