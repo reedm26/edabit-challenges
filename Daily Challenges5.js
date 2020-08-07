@@ -100,3 +100,35 @@ function addUp(num) {
 function subReddit(link) {
   return link.split("/")[4];
 }
+
+// Create a function that takes two parameters:
+
+// An array with items ranging from numbers and strings.
+// An array with items ranging from numbers, strings and and anonymous function.
+
+// The function should return only the items from the first array that satisfies the anonymous function present in the second array.
+const oldFunction = function (num) {
+  return num > 2;
+};
+
+const array1 = [1, 2, 3, 4];
+const array2 = [2000, 3000, oldFunction];
+
+function filterArray(arr1, arr2) {
+  let newfunct = null;
+  arr2.forEach((el) => {
+    if (typeof el == "function") {
+      newfunct = el;
+    }
+  });
+
+  let result = [];
+
+  arr1.forEach((el) => {
+    if (newfunct(el)) {
+      result.push(el);
+    }
+  });
+
+  return result;
+}
