@@ -146,3 +146,12 @@ function filterArray(arr1, arr2) {
 
 // Given a sorted array of numbers, remove any numbers that are divisible by 13. Return the amended array.
 const unlucky13 = (nums) => nums.filter((x) => x % 13 !== 0);
+
+// For each number in an array, check if that number is greater than the sum of all numbers that appear before it in the array. If all numbers in the array pass this test, return true. Return false otherwise.
+function greaterThanSum(nums) {
+  for (let i = 1, len = nums.length; i < len; i++) {
+    let sum = nums.slice(0, i).reduce((a, b) => a + b);
+    if (sum >= nums[i]) return false;
+  }
+  return true;
+}
